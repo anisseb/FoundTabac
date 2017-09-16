@@ -1,0 +1,9 @@
+<ion-view title="Found your tabac" id="page2">
+  <ion-content padding="true" class="has-header">
+    <creator-map-component options="{&quot;mapTypeId&quot;:&quot;hybrid&quot;}" marker="true" location="Barcelona" zoom="12" style="display:block;position:relative;margin-left:-10px;width:calc(100% + 20px);height:300px;">
+      <ui-gmap-google-map ng-if="map.center" center="map.center" zoom="map.zoom" options="map.options">
+        <ui-gmap-marker coords="map.marker.coords" idkey="map.marker.id" options="map.marker.options"></ui-gmap-marker>
+      </ui-gmap-google-map>
+    </creator-map-component>
+  </ion-content>
+</ion-view>
